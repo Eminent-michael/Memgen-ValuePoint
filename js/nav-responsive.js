@@ -86,3 +86,36 @@ document.addEventListener("scroll", function () {
       }
       return false;
     }
+
+
+// Drop Down Effect on form page
+
+const digitalAsset = document.querySelector("#digital-asset")
+const digitalAssetBody = document.querySelector("#digital-asset-body")
+const dropdownIcon = document.querySelector("#digital-dropdown")
+
+const estateAsset = document.querySelector("#estate-asset");
+const estateAssetBody = document.querySelector("#estate-asset-body");
+const estateDropdownIcon = document.querySelector("#estate-dropdown");
+
+const tradingAsset = document.querySelector("#trading-asset");
+const tradingAssetBody = document.querySelector("#trading-asset-body");
+const tradingDropdownIcon = document.querySelector("#trading-dropdown");
+
+digitalAsset.addEventListener("click", () => {
+  digitalAssetBody.classList.toggle('addheight');
+  digitalAssetBody.classList.toggle("py-8");
+  dropdownIcon.classList.toggle("open");
+})
+
+estateAsset.addEventListener("click", () => {
+ estateAssetBody.classList.toggle("addheight");
+  estateAssetBody.classList.toggle("py-8");
+  estateDropdownIcon.classList.toggle("open");
+});
+
+tradingAsset.addEventListener("click", () => {
+  tradingAssetBody.classList.toggle("addheight");
+  tradingAssetBody.classList.toggle("py-8");
+  tradingDropdownIcon.classList.toggle("open");
+});

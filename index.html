@@ -26,24 +26,38 @@ clients." />
     rel="stylesheet" />
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
+    .hero {
+      background-image: linear-gradient(to right bottom, rgba(33, 76, 206, 0.6), rgba(0, 0, 0, 0.6)),
+        url('images/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    @media (max-width:768px) {
+      .hero {
+        background-position: right;
+      }
+    }
+
     .gradient {
       background: linear-gradient(100deg, #4872E8 0%, #2a57d2 100%);
     }
 
-    .primary-color{
-      color: #4872E8 !important;
+    .primary-color {
+      color: #214cce !important;
     }
 
-    .bg-primary{
-      background-color: #4872E8 !important;
+    .bg-primary {
+      background-color: #214cce !important;
     }
 
-    .secondary-color{
-      color: #C49808 !important;
+    .secondary-color {
+      color: #ffd700 !important;
     }
 
     .bg-secondary {
-      background-color: #C49808 !important;
+      background-color: #ffd700 !important;
     }
   </style>
 </head>
@@ -75,7 +89,7 @@ clients." />
       </div>
       <div class="block lg:hidden pr-4">
         <button id="nav-toggle"
-          class="flex items-center hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="ham flex items-center hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <svg class="fill-current h-6 w-6"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg">
@@ -85,24 +99,27 @@ clients." />
         </button>
       </div>
       <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 sm:bg-primary md:bg-transparent text-black p-4 lg:p-0 z-20"
         id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center md:w-full">
           <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-black font-bold no-underline"
+            <a class="nav-item inline-block text-white py-2 px-4 font-bold no-underline"
               href="/">Home</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+            <a class="nav-item inline-block text-white hover:text-underline py-2 px-4"
               href="about-us.html">About Us</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+            <a class="nav-item inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
               href="our-service.html">Our Service</a>
           </li>
         </ul>
-        <a href="contact-form.html" id="navAction"
-          class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <a href="contact-form.html"
+          id="navAction"
+          class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full mt-2 lg:mt-0 py-4 px-8
+          shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300
+          ease-in-out">
           Contact Us
         </a>
       </div>
@@ -110,30 +127,26 @@ clients." />
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
   <!--Hero-->
-  <div class="pt-24">
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+  <div class="pt-24 hero">
+    <div class="container px-3 mx-auto flex flex-wrap items-center">
       <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-        <h1 class="my-4 text-5xl font-bold space-0 leading-12">
-          Welcome to Memgen ValuePoint International
+      <div class="text-center md:text-left">
+        <h1 class="my-4 text-6xl md:text-7xl font-bold text-center md:text-left space-0 leading-12 md:w-11/12">
+          Welcome to Memgen <br> ValuePoint International
         </h1>
-        <p class="leading-7 text-xl mb-8">
+        <p class="leading-7 mb-8 text-lg">
           Empowering Your Financial Future Through Digital Assets, Forex, and Real Estate
           Investments
         </p>
         <button
-          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Get Started Today
         </button>
       </div>
       <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6 text-center">
-        <img class="w-4/5 ml-12 md:w-4/6 md:ml-40 z-50"
-          src="images/hero.png" />
-      </div>
     </div>
   </div>
-  <div class="relative -mt-12 lg:-mt-24">
+  <div class="relative -mt-12 lg:-mt-44">
     <svg viewBox="0 0 1428 174"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -169,24 +182,23 @@ clients." />
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
       <div class="flex flex-wrap items-center">
-        <div class="w-5/6 sm:w-1/2 p-6 md:mx-0 mx-auto">
-          <h3 class="text-4xl text-gray-800 font-bold leading-none mb-7 text-center md:text-left">
-            Introduction
-          </h3>
-          <p class="text-gray-600 mb-8 md:text-2xl text-center md:text-left">
+        <div class="w-5/6 sm:w-1/2 px-6 md:mx-0 mx-auto">
+          <p class="text-gray-600 md:text-2xl text-center md:text-left">
             Discover innovative investment opportunities in blockchain, forex, and
             real estate.
           </p>
         </div>
-        <div class="w-full sm:w-1/2 p-6 md:mt-0 -mt-16">
-          <img src="images/introduction.svg"
-            alt="vision vector image">
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="images/introduction.jpg"
+            alt="Team Member 1"
+            class="w-60 mx-auto md:w-full rounded-full mb-4">
         </div>
       </div>
       <div class="flex flex-wrap items-center flex-col-reverse sm:flex-row">
-        <div class="w-full sm:w-1/2 p-6 md:mt-0 -mt-16">
-          <img src="images/vision.svg"
-            alt="vision vector image">
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="images/vision.jpg"
+            alt="Team Member 1"
+            class="w-60 mx-auto md:w-full rounded-full mb-4">
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -211,16 +223,18 @@ clients." />
             management, blockchain education, forex trading, and real estate investments to build
           </p>
         </div>
-        <div class="w-full sm:w-1/2 p-6 md:mt-0 -mt-24">
-          <img src="images/mission.svg"
-            alt="mission icon">
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="images/mission.jpg"
+            alt="Team Member 1"
+            class="w-60 mx-auto md:w-full rounded-full mb-4">
         </div>
       </div>
 
       <div class="flex flex-wrap flex-col-reverse items-center sm:flex-row">
-        <div class="w-full sm:w-1/2 p-6 md:mt-0 -mt-24">
-          <img src="images/service.svg"
-            alt="service vector image">
+        <div class="w-full sm:w-1/2 p-6 object-contain">
+          <img src="images/service.jpg"
+            alt="Team Member 1"
+            class="w-60 mx-auto md:w-full rounded-full mb-4">
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -235,10 +249,12 @@ clients." />
       </div>
     </div>
   </section>
- 
 
-  <section class="container mx-auto text-center py-6 mb-12">
-    <h1 class="text-white text-4xl font-bold">Image will be here</h1>
+
+  <section style="max-height: 500px"
+    class="overflow-hidden">
+    <img src="images/section-image.jpg"
+      alt="">
   </section>
   <!--Footer-->
   <footer class="bg-white">
@@ -297,7 +313,7 @@ clients." />
             </li>
           </ul>
         </div>
-        <div class="flex-2">
+        <div class="md:w-3/6">
           <div class="px-6 py-6 bg-primary rounded-lg md:py-7 md:px-7 lg:py-9 lg:px-9 xl:flex flex-col">
             <div class="flex-1">
               <h2 class="text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl sm:leading-9">
@@ -307,37 +323,54 @@ clients." />
                 Subscribe to our newsletter and stay updated on the latest developments.
               </p>
             </div>
-            <div class="mt-2 sm:w-full sm:max-w-md">
+            <div class="mt-2 sm:w-full">
               <div id="mc_embed_signup">
-                <form class="sm:flex">
-                  <input class="required rounded-md w-full px-4 py-2 email"
+                <form>
+
+                  <input class="required rounded-md w-full px-4 py-2 text-gray-900"
+                    id="mce-EMAIL"
+                    placeholder="Full name"
+                    required=""
+                    type="text"
+                    value=""
+                    aria-required="true">
+
+                  <input class="required mt-3 rounded-md w-full px-4 py-2 email text-gray-900"
                     id="mce-EMAIL"
                     placeholder="Enter your email"
                     required=""
                     type="email"
                     value=""
                     aria-required="true">
-                  <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                    <button class="w-full flex items-center justify-center px-5 py-3 text-base leading-6
-                            font-medium rounded-md text-white g focus:ring
-                            hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400
-                            transition duration-150 ease-in-out"
-                      type="submit">
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
+
+                  <textarea name="textarea"
+                    id="text"
+                    cols="30"
+                    rows="10"
+                    class="mt-3 mb-3 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-normal text-gray-900"
+                    placeholder="Message here"></textarea>
               </div>
+              <div class="mt-2 rounded-md shadow sm:mt-0 sm:flex-shrink-0">
+                <button class="bg-white w-full flex items-center justify-center px-5 py-3 text-base leading-6
+                            font-medium rounded-md text-black g focus:ring
+                            hover:bg-gray-200 focus:outline-none focus:bg-indigo-400
+                            transition duration-150 ease-in-out"
+                  type="submit">
+                  Subscribe
+                </button>
+              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </footer>
   <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   -->
- 
+
   <script src="js/nav-responsive.js">
   </script>
 </body>

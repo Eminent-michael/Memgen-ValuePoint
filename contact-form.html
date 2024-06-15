@@ -27,7 +27,23 @@ clients." />
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
         .gradient {
-            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+            background: linear-gradient(100deg, #4872E8 0%, #2a57d2 100%);
+        }
+
+        .primary-color {
+            color: #214cce !important;
+        }
+
+        .bg-primary {
+            background-color: #214cce !important;
+        }
+
+        .secondary-color {
+            color: #ffd700 !important;
+        }
+
+        .bg-secondary {
+            background-color: #ffd700 !important;
         }
 
         .addheight {
@@ -172,13 +188,13 @@ clients." />
                     <div class="my-6 flex gap-4">
                         <select name="select"
                             id="select"
-                            class="block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
+                            class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                             <option class="font-semibold text-slate-300">Select Country</option>
                         </select>
 
                         <select name="select"
                             id="select"
-                            class="block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
+                            class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                             <option class="font-semibold text-slate-300"
                                 value="none"
                                 selected>Preferred Contact Method</option>
@@ -190,13 +206,6 @@ clients." />
                         </select>
                     </div>
 
-                    <!-- <div class="">
-                        <textarea name="textarea"
-                            id="text"
-                            cols="30"
-                            rows="10"
-                            class="mb-10 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-gray-300">Message</textarea>
-                    </div> -->
                     <div class="text-3xl text-gray-700 mb-5 font-semibold">Service Interest</div>
                     <div>
                         <div class="border px-2 border-gray-500 pb-2"

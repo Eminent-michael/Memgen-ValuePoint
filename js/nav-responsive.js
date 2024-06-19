@@ -5,7 +5,6 @@
 var scrollpos = window.scrollY;
 var header = document.getElementById("header");
 var navcontent = document.getElementById("nav-content");
-var navaction = document.getElementById("navAction");
 var brandname = document.getElementById("brandname");
 var toToggle = document.querySelectorAll(".toggleColour");
 var navItems = document.querySelectorAll(".nav-item");
@@ -17,20 +16,17 @@ document.addEventListener("scroll", function () {
 
   if (scrollpos > 10) {
     header.classList.add("bg-white");
-    navaction.classList.remove("bg-white");
-    navaction.classList.add("gradient");
-    navaction.classList.remove("text-gray-800");
-    navaction.classList.add("bg-secondary");
+    header.classList.remove("header-bg");
     //Use to switch toggleColour colours
     for (var i = 0; i < toToggle.length; i++) {
       toToggle[i].classList.add("text-gray-800");
       toToggle[i].classList.remove("text-white");
     }
 
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.add("text-black");
-      navItems[i].classList.remove("text-white");
-    }
+    // for (var i = 0; i < navItems.length; i++) {
+    //   navItems[i].classList.add("text-black");
+    //   navItems[i].classList.remove("text-white");
+    // }
 
     header.classList.add("shadow");
     navcontent.classList.remove("bg-gray-100");
@@ -39,28 +35,21 @@ document.addEventListener("scroll", function () {
     hamIcom.classList.remove("text-white");
   } else {
     header.classList.remove("bg-white");
-    navaction.classList.remove("gradient");
-    navaction.classList.add("bg-white");
-    navaction.classList.remove("text-white");
-    navaction.classList.add("text-gray-800");
+    header.classList.add("header-bg");
     //Use to switch toggleColour colours
     for (var i = 0; i < toToggle.length; i++) {
       toToggle[i].classList.add("text-white");
       toToggle[i].classList.remove("text-gray-800");
     }
 
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove("text-black");
-      navItems[i].classList.add("text-white");
-    }
+    // for (var i = 0; i < navItems.length; i++) {
+    //   navItems[i].classList.remove("text-black");
+    //   navItems[i].classList.add("text-white");
+    // }
 
     header.classList.remove("shadow");
     navcontent.classList.remove("bg-white");
     navcontent.classList.add("bg-gray-100");
-    navItem.classList.add("text-white");
-    navItem.classList.remove("text-black");
-    hamIcom.classList.remove("text-black");
-    hamIcom.classList.add("text-white");
   }
 });
 

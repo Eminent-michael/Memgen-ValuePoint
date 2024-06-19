@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+        content="ie=edge" />
+    <title>
+        Portfolio
+    </title>
+    <meta name="description"
+        content="Memgen ValuePoint International is a premier investment advisory firm
+specializing in blockchain technology, forex trading, and real estate. Our team of seasoned
+professionals is dedicated to providing cutting-edge solutions that drive financial success for our
+clients." />
+    <meta name="keywords"
+        content="" />
+    <meta name="author"
+        content="" />
+    <link rel="stylesheet"
+        href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+        rel="stylesheet" />
+
+    <link rel="stylesheet"
+        href="style.css">
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+        .hero {
+            background-image: linear-gradient(to right bottom, rgba(33, 76, 206, 0.6), rgba(0, 0, 0, 0.6)),
+                url('images/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        @media (max-width:768px) {
+            .hero {
+                background-position: right;
+            }
+        }
+
+        .gradient {
+            background: linear-gradient(100deg, #4872E8 0%, #2a57d2 100%);
+        }
+
+        .header-bg {
+            background: rgba(255, 255, 255, 0.52);
+        }
+
+        .primary-color {
+            color: #214cce !important;
+        }
+
+        .bg-primary {
+            background-color: #214cce !important;
+        }
+
+        .secondary-color {
+            color: #ffd700 !important;
+        }
+
+        .bg-secondary {
+            background-color: #ffd700 !important;
+        }
+    </style>
+</head>
+
+<body class="leading-normal tracking-normal text-white gradient"
+    style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header"
+        class="fixed w-full top-0 text-white header-bg"
+        style="z-index: 1000;">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+            <div class="pl-4 flex items-center">
+                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                    href="#">
+                    <img src="images/logo.png"
+                        class="w-40"
+                        alt="">
+                </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle"
+                    class="ham flex items-center hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <svg class="fill-current h-6 w-6"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 sm:bg-primary md:bg-transparent text-black p-4 lg:p-0 z-20"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center md:w-full text-black">
+                    <li class="mr-3">
+                        <a class="nav-item inline-block py-2 px-4 no-underline hover:text-gray-800 hover:text-underline"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="nav-item inline-bloc hover:text-underline py-2 px-4 hover:text-gray-800"
+                            href="about-us.html">About Us</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="nav-item inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="our-service.html">Our Service</a>
+                    </li>
+
+                    <li class="mr-3">
+                        <a class="nav-item inline-block no-underline font-bold hover:text-gray-800 hover:text-underline py-2 px-4"
+                            href="portfolio.html">Portfolio</a>
+                    </li>
+
+                </ul>
+                <!-- <a href="contact-form.html"
+          id="navAction"
+          class="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full mt-2 lg:mt-0 py-4 px-8
+          shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300
+          ease-in-out">
+          Contact Us
+        </a> -->
+            </div>
+        </div>
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+
+    <div class="pt-16 bg-white">
+        <div class="pb-16">
+            <div class=" container mx-auto flex gap-2 justify-end fixed"
+                style="top: 60px; z-index: 1000;">
+                <a href="#Explore"
+                    class="px-2 py-1 text-sm bg-blue-400">Explore</a>
+                <a href="#form"
+                    class="px-2 py-1 text-sm bg-blue-400">On-board form</a>
+            </div>
+
+            <div id="Explore">
+                <div class="pt-10">
+                    <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center primary-color">
+                        Track Record
+                    </h2>
+                    <div class="w-full mb-4">
+                        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                    </div>
+
+                    <div>
+                        <div class="container mx-auto">
+                            <div class="md:w-2/4 mx-auto text-center mt-20">
+                                <h3 class="text-4xl text-gray-700 mb-5">Our Achievements</h3>
+                                <p class="text-gray-500">
+                                    Since our inception, Memgen ValuePoint International has consistently delivered
+                                    outstanding
+                                    results for our clients. Our proven track record in digital assets, forex trading,
+                                    and
+                                    real
+                                    estate investments speaks volumes about our expertise and commitment to client
+                                    success.
+                                </p>
+                            </div>
+                            <div class="">
+
+                            </div>
+                        </div>
+                        <div class="gradient mt-12 py-10">
+                            <h3 class="container mx-auto text-4xl text-center text-white mb-5">Highlights</h3>
+                            <div class="container mx-auto">
+                                <div class="flex flex-col md:flex-row md:gap-7">
+                                    <div role="listitem"
+                                        class="flex-1 bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-gray-600 rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    6+ Years in Blockchain and Digital Asset Management
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                Our journey in the digital asset market began in 2016, and we've since
+                                                expanded our
+                                                expertise to encompass comprehensive portfolio management.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div role="listitem"
+                                        class="bg-white flex-1 dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-gray-600 rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    3 Years of Successful Portfolio Management
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                We have a stellar track record in managing high-value portfolios for a
+                                                diverse
+                                                clientele, including high-net-worth individuals and business owners.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div role="listitem"
+                                        class="bg-white flex-1 dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-gray-600 rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    Average Returns of 70% - 120% per Term
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                We have a stellar track record in managing high-value portfolios for a
+                                                diverse
+                                                clientele, including high-net-worth individuals and business owners.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+
+                        <div class="mt-12 py-10">
+                            <div class="container mx-auto text-center">
+                                <h3 class="text-4xl text-gray-700 mb-3">Why Choose Us</h3>
+                                <p class="text-gray-500 mb-4">
+                                    Choosing Memgen ValuePoint International means partnering with a team dedicated to
+                                    your
+                                    financial success. <br>Here’s why we stand out:
+                                </p>
+                            </div>
+                            <div class="container mx-auto">
+                                <div>
+                                    <div role="listitem"
+                                        class="flex-1 bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-primary rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    Expertise
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                Our team comprises seasoned professionals with deep knowledge of digital
+                                                assets, forex trading, and real estate. We leverage our extensive
+                                                experience
+                                                to provide top-notch advisory services.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div role="listitem"
+                                        class="bg-white flex-1 dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-primary rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    Proven Results
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                Our track record of delivering exceptional returns is a testament to our
+                                                strategic investment approach and market insights.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div role="listitem"
+                                        class="bg-white flex-1 dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-primary rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    Personalized Service
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                We understand that every client is unique. Our personalized approach
+                                                ensures
+                                                that your investment strategy aligns with your specific financial goals
+                                                and
+                                                risk tolerance.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div role="listitem"
+                                        class="bg-white flex-1 dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-primary rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    Transparency
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                We believe in maintaining open and honest communication with our
+                                                clients,
+                                                providing clear insights and updates on their investments.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div role="listitem"
+                                        class="bg-white flex-1 dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
+                                        <div class="w-2.5 h-auto bg-primary rounded-tl-md rounded-bl-md"></div>
+                                        <div class="w-full p-8">
+                                            <div class="">
+                                                <h2
+                                                    class="text-2xl font-semibold leading-6 text-gray-800 dark:text-white">
+                                                    Innovation
+                                                </h2>
+                                            </div>
+                                            <p
+                                                class="md:w-90 text-base leading-6 mt-4 text-gray-600 dark:text-gray-200">
+                                                We stay ahead of industry trends, utilizing the latest technologies and
+                                                strategies to maximize your returns and minimize risks.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="container mx-auto mt-20">
+                                <h2 class="text-4xl text-gray-700 text-center mb-10 uppercase">Client Testimonials</h2>
+                                <div class="flex justify-center items-center gap-4 lg:px-10 px-4">
+                                    <div
+                                        class="w-full md:w-1/2 lg:w-1/3 hover:shadow-indigo-300 hover:shadow-lg rounded-lg border">
+                                        <div class="flex justify-center items-start flex-col p-5 ">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                width="30"
+                                                height="30"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                class="icon icon-tabler icon-tabler-quote rotate-180 text-sky-500"
+                                                viewBox="0 0 24 24">
+                                                <path stroke="none"
+                                                    d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10 11H6a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5M19 11h-4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5">
+                                                </path>
+                                            </svg>
+
+                                            <div class="flex justify-center items-start flex-col text-left gap-5">
+                                                <p class="italic text-sm text-gray-700 md:text-base tracking-normal">
+                                                    "Memgen ValuePoint International transformed my investment
+                                                    portfolio,
+                                                    delivering impressive returns and invaluable insights. Their
+                                                    expertise
+                                                    in digital assets and forex trading is unmatched."
+                                                </p>
+                                                <div>
+                                                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                                                        John Kamal
+                                                    </h3>
+                                                    <p class="text-sm md:text-lg text-gray-600">CEO</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="bg-primary p-0.5 rounded-b-lg"></div>
+                                    </div>
+
+                                    <div
+                                        class="w-full md:w-1/2 lg:w-1/3 hover:shadow-indigo-300 hover:shadow-lg rounded-lg border">
+                                        <div class="flex justify-center items-start flex-col p-5 ">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                width="30"
+                                                height="30"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                class="icon icon-tabler icon-tabler-quote rotate-180 text-sky-500"
+                                                viewBox="0 0 24 24">
+                                                <path stroke="none"
+                                                    d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10 11H6a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5M19 11h-4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5">
+                                                </path>
+                                            </svg>
+
+                                            <div class="flex justify-center items-start flex-col text-left gap-5">
+                                                <p class="italic text-sm text-gray-700 md:text-base">
+                                                    "Their strategic approach and personalized service have been pivotal
+                                                    in
+                                                    achieving my financial goals. I highly recommend Memgen ValuePoint
+                                                    International for anyone serious about investment."
+                                                </p>
+                                                <div>
+                                                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                                                        Janes Smith
+                                                    </h3>
+                                                    <p class="text-xs md:text-sm text-gray-600">Business Owner</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="bg-primary p-0.5 rounded-b-lg"></div>
+                                    </div>
+
+                                    <div
+                                        class="w-full md:w-1/2 lg:w-1/3 hover:shadow-indigo-300 hover:shadow-lg rounded-lg border">
+                                        <div class="flex justify-center items-start flex-col p-5 ">
+
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                width="30"
+                                                height="30"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                class="icon icon-tabler icon-tabler-quote rotate-180 text-sky-500"
+                                                viewBox="0 0 24 24">
+                                                <path stroke="none"
+                                                    d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M10 11H6a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5M19 11h-4a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 011 1v6c0 2.667-1.333 4.333-4 5">
+                                                </path>
+                                            </svg>
+
+                                            <div class="flex justify-center items-start flex-col text-left gap-5">
+                                                <p class="italic text-sm text-gray-700 md:text-base">
+                                                    "Working with Memgen ValuePoint International has been a
+                                                    game-changer.
+                                                    Their transparency and consistent communication make me feel secure
+                                                    about my investments."
+                                                </p>
+                                                <div>
+                                                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                                                        Michael Brown
+                                                    </h3>
+                                                    <p class="text-xs md:text-sm text-gray-600">High-Net-Worth
+                                                        Individual
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="bg-primary p-0.5 rounded-b-lg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Onboard form -->
+
+            <div id="form">
+                <div class="container mx-auto">
+                    <button class="w-full bg-primary p-3 font-semibold rounded rounded-md hover:bg-blue-600"
+                        id="show-form">Show Onboard Form</button>
+                </div>
+
+                <div class="gradient hidden mt-5"
+                    id="Onboard-form">
+
+                    <div class="container mx-auto pt-24 pb-14 w-full md:w-3/6">
+                        <div class="border-2 rounded-lg shadow shadow-lg bg-white">
+                            <div class="mt-3 text-center text-4xl font-bold text-gray-700">On Board Form</div>
+                            <form method="post" id="onboard-data">
+                                <div class="p-8">
+                                    <div id="Client-data">
+                                        <div class="flex md:flex-row flex-col gap-4">
+                                            <input type="text"
+                                                name="name"
+                                                class="mt-1 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                        placeholder:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                        focus:ring-sky-500 sm:text-sm"
+                                                placeholder="Full Name *"
+                                                required />
+
+                                            <input type="email"
+                                                name="email"
+                                                class="mt-1 block md:w-1/2 text-gray-700 rounded-md font-semibold border border-slate-300
+                                        bg-white px-3 py-4
+                                        placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500
+                                        focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                                                placeholder="Email *"
+                                                required />
+                                        </div>
+
+                                        <div class="flex md:flex-row flex-col gap-4 mt-4">
+                                            <input type="tel"
+                                                name="phone"
+                                                class="mt-1 block w-full md:w-1/2 text-gray-700 font-semibold rounded-md border
+                                        border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm
+                                        placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none
+                                        focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                                                placeholder="Phone number *"
+                                                required />
+                                            <input type="text"
+                                                name="address"
+                                                class="mt-1 block w-full md:w-1/2 text-gray-700 font-semibold rounded-md border
+                                        border-slate-300 bg-white px-3 py-4
+                                        placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500
+                                        focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                                                placeholder="Address *"
+                                                required />
+                                        </div>
+
+                                        <div class="my-6 flex gap-4">
+                                            <input type="text"
+                                                name="select"
+                                                id="select"
+                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-700 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                                                placeholder="City" />
+
+                                            <input type="text"
+                                                name="select"
+                                                id="select"
+                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold
+                                        text-gray-700 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1
+                                        focus:ring-sky-500 sm:text-sm" placeholder="State/Province" />
+
+                                        </div>
+
+                                        <div class="my-6 flex gap-4">
+                                            <select name="select" id="select"
+                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" required>
+                                                <option class="font-semibold text-slate-300" value="">Select Country</option>
+                                                <option class="font-semibold text-slate-300"
+                                                    value="Nigeria">Nigeria</option>
+                                            </select>
+
+                                            <select name="select"
+                                                id="select"
+                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" required>
+                                                <option class="font-semibold text-slate-300"
+                                                    value=""
+                                                    selected>Preferred Contact Method</option>
+                                                <option class="font-semibold text-slate-300"
+                                                    value="Email">Email</option>
+                                                <option class="font-semibold text-slate-300"
+                                                    value="Phone">Phone</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div id="service-interest"
+                                        class="hidden">
+                                        <div class="text-3xl text-gray-700 mb-5 font-semibold">Service Interest</div>
+                                        <div class="border px-2 border-gray-500 pb-2"
+                                            style="border-right: 0; border-left: 0; border-top: 0;">
+                                            <div class="flex items-center justify-between cursor-pointer"
+                                                id="digital-asset">
+                                                <h2 class="text-gray-700 text-xl font-medium">Digital Asset Portfolio
+                                                    Management
+                                                </h2>
+
+                                                <div class="dropdown-icon"
+                                                    id="digital-dropdown">
+                                                    <img src="images/icons8-dropdown-24.png"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="px-4 grid"
+                                                style="grid-template-rows: 0fr; transition: grid-template-rows 500ms;"
+                                                id="digital-asset-body">
+                                                <div class="overflow-hidden">
+                                                    <label class="text-gray-600 font-medium">Current Investment
+                                                        Experience</label>
+                                                    <select name="select"
+                                                        id="select"
+                                                        class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Beginner"
+                                                            selected>Beginner</option>
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Intermediate">Intermediate</option>
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Advance">Advance</option>
+                                                    </select>
+
+                                                    <div class="mt-4">
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Types of
+                                                            Digital
+                                                            Assets
+                                                            Currently Owned
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
+                                                                <input type="checkbox"
+                                                                    name="Bitcoin">
+                                                                <i class="pl-2">Bitcoin</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Ethereum">
+                                                                <i class="pl-2">Ethereum</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Altcoins">
+                                                                <i class="pl-2">Altcoins</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Stablecoins">
+                                                                <i class="pl-2">Stablecoins</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="NFTs">
+                                                                <i class="pl-2">NFTs</i>
+                                                            </label>
+
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>Others (please specify):</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Others" />
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-7">
+                                                        <p class="text-gray-700 text-lg font-semibold">Investment Goals
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Short-term gains">
+                                                                <i class="pl-2">Short-term gains</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Long-term wealth accumulation">
+                                                                <i class="pl-2">Long-term wealth accumulation</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Diversification">
+                                                                <i class="pl-2">Diversification</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Stablecoins"
+                                                                    value="Hedging against inflation">
+                                                                <i class="pl-2">Hedging against inflation</i>
+                                                            </label>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-7">
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Preferred
+                                                            Investment
+                                                            Duration
+                                                        </p>
+                                                        <div>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
+                                                                <input type="checkbox"
+                                                                    name="Bitcoin">
+                                                                <i class="pl-2">6 Months (25% Return)</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
+                                                                <input type="checkbox"
+                                                                    name="Bitcoin">
+                                                                <i class="pl-2">12 Months (70% Return)</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="15months"
+                                                                    value="15 Months (100% Return)">
+                                                                <i class="pl-2">15 Months (100% Return)</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Altcoins">
+                                                                <i class="pl-2">18 Months (120% Return)</i>
+                                                            </label>
+
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>Additional Information or Questions:</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Question" />
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 border px-2 border-gray-500 pb-2"
+                                            style="border-right: 0; border-left: 0; border-top: 0;">
+                                            <div class="flex items-center justify-between cursor-pointer"
+                                                id="trading-asset">
+                                                <h2 class="text-gray-700 text-xl font-medium">Forex Trading Investment
+                                                </h2>
+
+                                                <div class="dropdown-icon"
+                                                    id="trading-dropdown">
+                                                    <img src="images/icons8-dropdown-24.png"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="px-4 grid"
+                                                style="grid-template-rows: 0fr; transition: grid-template-rows 500ms;"
+                                                id="trading-asset-body">
+                                                <div class="overflow-hidden">
+                                                    <label class="text-gray-600 font-medium">Current Trading
+                                                        Experience</label>
+                                                    <select name="select"
+                                                        id="select"
+                                                        class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Beginner"
+                                                            selected>Beginner</option>
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Intermediate">Intermediate</option>
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Advance">Advance</option>
+                                                    </select>
+
+                                                    <div class="mt-4">
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Trading
+                                                            Style
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
+                                                                <input type="checkbox"
+                                                                    name="Day Trading">
+                                                                <i class="pl-2">Day Trading</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Swing Trading">
+                                                                <i class="pl-2">Swing Trading</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Position Trading">
+                                                                <i class="pl-2">Position Trading</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Scalping">
+                                                                <i class="pl-2">Scalping</i>
+                                                            </label>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-7">
+                                                        <p class="text-gray-700 text-lg font-semibold">Investment Goals
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Short-term gains">
+                                                                <i class="pl-2">Short-term gains</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Long-term wealth accumulation">
+                                                                <i class="pl-2">Long-term wealth accumulation</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Diversification">
+                                                                <i class="pl-2">Diversification</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Stablecoins"
+                                                                    value="Hedging against inflation">
+                                                                <i class="pl-2">Hedging against currency
+                                                                    fluctuations</i>
+                                                            </label>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-7">
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Preferred
+                                                            Currency
+                                                            Pairs
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
+                                                                <input type="checkbox"
+                                                                    name="Bitcoin">
+                                                                <i class="pl-2">EUR/USD</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="15months"
+                                                                    value="15 Months (100% Return)">
+                                                                <i class="pl-2">GBP/USD</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Altcoins">
+                                                                <i class="pl-2">USD/JPY</i>
+                                                            </label>
+
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>Additional Information or Questions:</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Question" />
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-4 border px-2 border-gray-500 pb-2"
+                                            style="border-right: 0; border-left: 0; border-top: 0;">
+                                            <div class="flex cursor-pointer items-center justify-between"
+                                                id="estate-asset">
+                                                <h2 class="text-gray-700 text-xl font-medium">Real Estate Advisory</h2>
+
+                                                <div class="dropdown-icon"
+                                                    id="estate-dropdown">
+                                                    <img src="images/icons8-dropdown-24.png"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="px-4 grid"
+                                                style="grid-template-rows: 0fr; transition: grid-template-rows 500ms;"
+                                                id="estate-asset-body">
+                                                <div class="overflow-hidden">
+                                                    <label class="text-gray-600 font-medium">Current Real Estate
+                                                        Investment
+                                                        Experience</label>
+                                                    <select name="select"
+                                                        id="select"
+                                                        class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Beginner"
+                                                            selected>Beginner</option>
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Intermediate">Intermediate</option>
+                                                        <option class="font-semibold text-slate-300"
+                                                            value="Advance">Advance</option>
+                                                    </select>
+
+                                                    <div class="mt-4">
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Types of
+                                                            Real Estate
+                                                            Interests:
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
+                                                                <input type="checkbox"
+                                                                    name="Day Trading">
+                                                                <i class="pl-2">Residential Properties</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Swing Trading">
+                                                                <i class="pl-2">Commercial Properties</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Position Trading">
+                                                                <i class="pl-2">Industrial Properties</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Scalping">
+                                                                <i class="pl-2">Land Development</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Scalping">
+                                                                <i class="pl-2">Real Estate Investment Trusts
+                                                                    (REITs)</i>
+                                                            </label>
+
+
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>Other (please specify)</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Question" />
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-7">
+                                                        <p class="text-gray-700 text-lg font-semibold">Investment Goals
+                                                        </p>
+                                                        <div>
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Short-term gains">
+                                                                <i class="pl-2">Rental Income</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Long-term wealth accumulation">
+                                                                <i class="pl-2">Property Flipping</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Diversification">
+                                                                <i class="pl-2">Long-term appreciation</i>
+                                                            </label>
+
+                                                            <label
+                                                                class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
+                                                                <input type="checkbox"
+                                                                    name="Stablecoins"
+                                                                    value="Hedging against inflation">
+                                                                <i class="pl-2">Diversification</i>
+                                                            </label>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-7">
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Preferred
+                                                            Locations
+                                                        </p>
+                                                        <div>
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>Domestic (please specify region)</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Domestic" />
+
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>International (please specify countries)</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Inernational" />
+
+                                                            <label class="my-3 text-gray-600 ">
+                                                                <i>Additional Information or Questions</i>
+                                                            </label>
+                                                            <input class="mt-2 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border
+                                            late-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm placeholder:font-bold
+                                            der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
+                                            ng-sky-500 sm:text-sm"
+                                                                type="text"
+                                                                name=""
+                                                                placeholder="Question" />
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="flex justify-between">
+
+                                        <button id="previous-btn"
+                                            class="invisible text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white flex">
+                                            <img src="images/left.png"
+                                                class="w-4 mr-2"
+                                                alt="">
+                                            Previous
+                                        </button>
+
+                                        <button type="submit"
+                                            class="text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3
+                                            text-sm font-semibold text-white flex">
+                                            Next <img src="images/next.png"
+                                                class="w-4 ml-2"
+                                                alt="">
+                                        </button>
+
+                                        <button type="submit"
+                                            class="hidden text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white flex">
+                                            Next <img src="images/next.png"
+                                                class="w-4 ml-2"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="js/nav-responsive.js">
+    </script>
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>

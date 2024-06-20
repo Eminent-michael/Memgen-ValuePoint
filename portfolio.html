@@ -622,8 +622,8 @@ clients." />
                                                 <div class="overflow-hidden">
                                                     <label class="text-gray-600 font-medium">Current Investment
                                                         Experience</label>
-                                                    <select name="select"
-                                                        id="select"
+                                                    <select name="digital-asset-exp"
+                                                        id="digitalExp"
                                                         class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                                                         <option class="font-semibold text-slate-300"
                                                             value="Beginner"
@@ -635,44 +635,48 @@ clients." />
                                                     </select>
 
                                                     <div class="mt-4">
-                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">Types of
-                                                            Digital
-                                                            Assets
-                                                            Currently Owned
+                                                        <p class="text-gray-600 text-lg mt-7 font-semibold">
+                                                            Types of Digital Assets Currently Owned
                                                         </p>
-                                                        <div>
+                                                        <div class="digital-type-owned"
+                                                            data-group="digitalTypeOwnGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
-                                                                    name="Bitcoin">
+                                                                    name="digitalTypeOwnGroup"
+                                                                    value="Bitcoin">
                                                                 <i class="pl-2">Bitcoin</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Ethereum">
+                                                                    name="digitalTypeOwnGroup"
+                                                                    value="Ethereum">
                                                                 <i class="pl-2">Ethereum</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Altcoins">
+                                                                    name="digitalTypeOwnGroup"
+                                                                    value="Altcoins">
                                                                 <i class="pl-2">Altcoins</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Stablecoins">
+                                                                    name="digitalTypeOwnGroup"
+                                                                    value="Stablecoins">
                                                                 <i class="pl-2">Stablecoins</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
-                                                                <input type="checkbox"
-                                                                    name="NFTs">
+                                                                <input type="digitalTypeOwnGroup"
+                                                                    name="NFTs"
+                                                                    value="NFTs">
                                                                 <i class="pl-2">NFTs</i>
                                                             </label>
 
@@ -684,7 +688,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="digitalTypeOwnGroupText"
                                                                 placeholder="Others" />
 
                                                         </div>
@@ -693,32 +697,36 @@ clients." />
                                                     <div class="mt-7">
                                                         <p class="text-gray-700 text-lg font-semibold">Investment Goals
                                                         </p>
-                                                        <div>
+                                                        <div class="digital-invest-goal"
+                                                            data-group="digitalInvestGoalGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Short-term gains">
+                                                                    name="digitalInvestGoalGroup"
+                                                                    value="Short-term gains">
                                                                 <i class="pl-2">Short-term gains</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Long-term wealth accumulation">
+                                                                    name="digitalInvestGoalGroup"
+                                                                    value="Long-term wealth accumulation">
                                                                 <i class="pl-2">Long-term wealth accumulation</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Diversification">
+                                                                    name="digitalInvestGoalGroup"
+                                                                    value="Diversification">
                                                                 <i class="pl-2">Diversification</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Stablecoins"
+                                                                    name="digitalInvestGoalGroup"
                                                                     value="Hedging against inflation">
                                                                 <i class="pl-2">Hedging against inflation</i>
                                                             </label>
@@ -731,26 +739,29 @@ clients." />
                                                             Investment
                                                             Duration
                                                         </p>
-                                                        <div>
+                                                        <div class="digital-pre-invest"
+                                                            name="digitalPreInvestGroup">
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
-                                                                    name="Bitcoin">
+                                                                    name="digitalPreInvestGroup"
+                                                                    value="6 Months (25% Return)">
                                                                 <i class="pl-2">6 Months (25% Return)</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
-                                                                    name="Bitcoin">
+                                                                    name="digitalPreInvestGroup"
+                                                                    value="12 Months (70% Return)">
                                                                 <i class="pl-2">12 Months (70% Return)</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="15months"
+                                                                    name="digitalPreInvestGroup"
                                                                     value="15 Months (100% Return)">
                                                                 <i class="pl-2">15 Months (100% Return)</i>
                                                             </label>
@@ -758,7 +769,8 @@ clients." />
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Altcoins">
+                                                                    name="digitalPreInvestGroup"
+                                                                    value="18 Months (120% Return)">
                                                                 <i class="pl-2">18 Months (120% Return)</i>
                                                             </label>
 
@@ -770,7 +782,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="digitalPreInvestGroupText"
                                                                 placeholder="Question" />
 
                                                         </div>
@@ -805,8 +817,8 @@ clients." />
                                                 <div class="overflow-hidden">
                                                     <label class="text-gray-600 font-medium">Current Trading
                                                         Experience</label>
-                                                    <select name="select"
-                                                        id="select"
+                                                    <select name="forex-exp"
+                                                        id="forex-exp"
                                                         class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                                                         <option class="font-semibold text-slate-300"
                                                             value="Beginner"
@@ -821,32 +833,37 @@ clients." />
                                                         <p class="text-gray-600 text-lg mt-7 font-semibold">Trading
                                                             Style
                                                         </p>
-                                                        <div>
+                                                        <div class="forex-trading-style"
+                                                            data-group="forexTradingStyleGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
-                                                                    name="Day Trading">
+                                                                    name="forexTradingStyleGroup"
+                                                                    value="Day Trading">
                                                                 <i class="pl-2">Day Trading</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Swing Trading">
+                                                                    name="forexTradingStyle"
+                                                                    value="Swing Trading">
                                                                 <i class="pl-2">Swing Trading</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Position Trading">
+                                                                    name="forexTradingStyleGroup"
+                                                                    value="Position Trading">
                                                                 <i class="pl-2">Position Trading</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Scalping">
+                                                                    name="forexTradingStyleGroup"
+                                                                    value="Scalping">
                                                                 <i class="pl-2">Scalping</i>
                                                             </label>
 
@@ -856,32 +873,36 @@ clients." />
                                                     <div class="mt-7">
                                                         <p class="text-gray-700 text-lg font-semibold">Investment Goals
                                                         </p>
-                                                        <div>
+                                                        <div class="forex-invest-goal"
+                                                            data-group="forexInvestGoalGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Short-term gains">
+                                                                    name="forexInvestGoalGroup"
+                                                                    value="Short-term gains">
                                                                 <i class="pl-2">Short-term gains</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Long-term wealth accumulation">
+                                                                    name="forexInvestGoalGroup"
+                                                                    value="Long-term wealth accumulation">
                                                                 <i class="pl-2">Long-term wealth accumulation</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Diversification">
+                                                                    name="forexInvestGoalGroup"
+                                                                    value="Diversification">
                                                                 <i class="pl-2">Diversification</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Stablecoins"
+                                                                    name="forexInvestGoalGroup"
                                                                     value="Hedging against inflation">
                                                                 <i class="pl-2">Hedging against currency
                                                                     fluctuations</i>
@@ -895,26 +916,28 @@ clients." />
                                                             Currency
                                                             Pairs
                                                         </p>
-                                                        <div>
+                                                        <div class="forex-pre-currency" data-group="forexPreCurrencyGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
-                                                                    name="Bitcoin">
+                                                                    name="forexPreCurrencyGroup"
+                                                                    value="EUR/USD">
                                                                 <i class="pl-2">EUR/USD</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="15months"
-                                                                    value="15 Months (100% Return)">
+                                                                    name="forexPreCurrencyGroup"
+                                                                    value="GBP/USD">
                                                                 <i class="pl-2">GBP/USD</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Altcoins">
+                                                                    name="forexPreCurrencyGroup"
+                                                                    value="USD/JPY">
                                                                 <i class="pl-2">USD/JPY</i>
                                                             </label>
 
@@ -926,7 +949,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="forexPreCurrencyGroupText"
                                                                 placeholder="Question" />
 
                                                         </div>
@@ -964,8 +987,8 @@ clients." />
                                                     <label class="text-gray-600 font-medium">Current Real Estate
                                                         Investment
                                                         Experience</label>
-                                                    <select name="select"
-                                                        id="select"
+                                                    <select name="estateExp"
+                                                        id="estate-exp"
                                                         class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                                                         <option class="font-semibold text-slate-300"
                                                             value="Beginner"
@@ -981,39 +1004,45 @@ clients." />
                                                             Real Estate
                                                             Interests:
                                                         </p>
-                                                        <div>
+                                                        <div class="estate-type" data-group="estateTypeGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
-                                                                    name="Day Trading">
+                                                                    name="estateTypeGroup"
+                                                                    value="Residential Properties">
                                                                 <i class="pl-2">Residential Properties</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Swing Trading">
+                                                                    name="estateTypeGroup"
+                                                                    value="Commercial Properties">
                                                                 <i class="pl-2">Commercial Properties</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Position Trading">
+                                                                    name="estateTypeGroup"
+                                                                    value="Industrial Properties">
                                                                 <i class="pl-2">Industrial Properties</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Scalping">
+                                                                    name="estateTypeGroup"
+                                                                    value="Land Development">
                                                                 <i class="pl-2">Land Development</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Scalping">
+                                                                    name="estateTypeGroup"
+                                                                    value="Real Estate Investment Trusts
+                                                                    (REITs)">
                                                                 <i class="pl-2">Real Estate Investment Trusts
                                                                     (REITs)</i>
                                                             </label>
@@ -1027,7 +1056,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="estateTypeGroupText"
                                                                 placeholder="Question" />
 
 
@@ -1037,33 +1066,36 @@ clients." />
                                                     <div class="mt-7">
                                                         <p class="text-gray-700 text-lg font-semibold">Investment Goals
                                                         </p>
-                                                        <div>
+                                                        <div class="estate-invest-goal" data-group="estateInvestGoalGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Short-term gains">
+                                                                    name="estateInvestGoalGroup"
+                                                                    value="Rental Income">
                                                                 <i class="pl-2">Rental Income</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Long-term wealth accumulation">
+                                                                    name="estateInvestGoalGroup"
+                                                                    value="Property Flipping">
                                                                 <i class="pl-2">Property Flipping</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Diversification">
+                                                                    name="estateInvestGoalGroup"
+                                                                    value="Long-term appreciation">
                                                                 <i class="pl-2">Long-term appreciation</i>
                                                             </label>
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
-                                                                    name="Stablecoins"
-                                                                    value="Hedging against inflation">
+                                                                    name="estateInvestGoalGroup"
+                                                                    value="Diversification">
                                                                 <i class="pl-2">Diversification</i>
                                                             </label>
 
@@ -1074,7 +1106,7 @@ clients." />
                                                         <p class="text-gray-600 text-lg mt-7 font-semibold">Preferred
                                                             Locations
                                                         </p>
-                                                        <div>
+                                                        <div class="estate-pre-location" data-group="estatePreLocationGroup">
                                                             <label class="my-3 text-gray-600 ">
                                                                 <i>Domestic (please specify region)</i>
                                                             </label>
@@ -1083,7 +1115,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="estatePreLocationGroup"
                                                                 placeholder="Domestic" />
 
                                                             <label class="my-3 text-gray-600 ">
@@ -1094,7 +1126,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="estatePreLocationGroup"
                                                                 placeholder="Inernational" />
 
                                                             <label class="my-3 text-gray-600 ">
@@ -1105,7 +1137,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name=""
+                                                                name="estatePreLocationGroup"
                                                                 placeholder="Question" />
 
                                                         </div>

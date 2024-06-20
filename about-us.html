@@ -24,7 +24,8 @@
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
         rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="style.css">
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
         .hero {
@@ -42,7 +43,7 @@
         }
 
         .gradient {
-            background: linear-gradient(100deg, #4872E8 0%, #2a57d2 100%);
+            background: linear-gradient(100deg, #1b385e 0%, #01003c 100%);
         }
 
         .header-bg {
@@ -50,19 +51,19 @@
         }
 
         .primary-color {
-            color: #214cce !important;
+            color: #1b385e !important;
         }
 
         .bg-primary {
-            background-color: #214cce !important;
+            background-color: #1b385e !important;
         }
 
         .secondary-color {
-            color: #ffd700 !important;
+            color: #f68948 !important;
         }
 
         .bg-secondary {
-            background-color: #ffd700 !important;
+            background-color: #f68948 !important;
         }
     </style>
 </head>
@@ -71,7 +72,8 @@
     style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
     <nav id="header"
-        class="fixed w-full top-0 text-white header-bg" style="z-index:1000;">
+        class="fixed w-full top-0 text-white header-bg"
+        style="z-index:1000;">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
@@ -128,11 +130,11 @@
 
     <section class="bg-white border-b py-8 pt-20">
         <div class="container mx-auto flex flex-wrap pt-4">
-            <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+            <h2 class="w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-center primary-color">
                 About Memgen ValuePoint <br> International
             </h2>
             <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                <div class="h-1 mx-auto gradient w-64 opacity-70 my-0 py-0 rounded-t"></div>
             </div>
             <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                 <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
@@ -209,7 +211,7 @@
         </div>
     </section>
 
-    <section class="bg-white border-b py-8 pt-20">
+    <section class="hidden bg-white border-b py-8 pt-20">
         <div class="container mx-auto flex flex-wrap pt-4">
             <h2 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
                 Meet our <span class="text-yellow-600">Team</span>

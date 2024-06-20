@@ -44,7 +44,7 @@ clients." />
         }
 
         .gradient {
-            background: linear-gradient(100deg, #4872E8 0%, #2a57d2 100%);
+            background: linear-gradient(100deg, #1b385e 0%, #01003c 100%);
         }
 
         .header-bg {
@@ -52,19 +52,33 @@ clients." />
         }
 
         .primary-color {
-            color: #214cce !important;
+            color: #1b385e !important;
         }
 
         .bg-primary {
-            background-color: #214cce !important;
+            background-color: #1b385e !important;
         }
 
         .secondary-color {
-            color: #ffd700 !important;
+            color: #f68948 !important;
         }
 
         .bg-secondary {
-            background-color: #ffd700 !important;
+            background-color: #f68948 !important;
+        }
+
+        .addheight {
+            grid-template-rows: 1fr !important;
+        }
+
+        .dropdown-icon {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+            /* Adjust duration and easing as needed */
+        }
+
+        .dropdown-icon.open {
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -130,8 +144,8 @@ clients." />
     </nav>
 
     <div class="pt-16 bg-white">
-        <div class="pb-16">
-            <div class=" container mx-auto flex gap-2 justify-end fixed"
+        <div>
+            <div class=" container px-3 mx-auto flex gap-2 justify-end"
                 style="top: 60px; z-index: 1000;">
                 <a href="#Explore"
                     class="px-2 py-1 text-sm bg-blue-400">Explore</a>
@@ -149,7 +163,7 @@ clients." />
                     </div>
 
                     <div>
-                        <div class="container mx-auto">
+                        <div class="container mx-auto px-3">
                             <div class="md:w-2/4 mx-auto text-center mt-20">
                                 <h3 class="text-4xl text-gray-700 mb-5">Our Achievements</h3>
                                 <p class="text-gray-500">
@@ -167,8 +181,8 @@ clients." />
                             </div>
                         </div>
                         <div class="gradient mt-12 py-10">
-                            <h3 class="container mx-auto text-4xl text-center text-white mb-5">Highlights</h3>
-                            <div class="container mx-auto">
+                            <h3 class="container px-3 mx-auto text-4xl text-center text-white mb-5">Highlights</h3>
+                            <div class="container px-3 mx-auto">
                                 <div class="flex flex-col md:flex-row md:gap-7">
                                     <div role="listitem"
                                         class="flex-1 bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
@@ -235,7 +249,7 @@ clients." />
                         </div>
 
                         <div class="mt-12 py-10">
-                            <div class="container mx-auto text-center">
+                            <div class="container px-3 mx-auto text-center">
                                 <h3 class="text-4xl text-gray-700 mb-3">Why Choose Us</h3>
                                 <p class="text-gray-500 mb-4">
                                     Choosing Memgen ValuePoint International means partnering with a team dedicated to
@@ -243,7 +257,7 @@ clients." />
                                     financial success. <br>Here’s why we stand out:
                                 </p>
                             </div>
-                            <div class="container mx-auto">
+                            <div class="container px-3 mx-auto">
                                 <div>
                                     <div role="listitem"
                                         class="flex-1 bg-white dark:bg-gray-800 cursor-pointer shadow rounded-lg mt-3 flex relative z-30">
@@ -344,9 +358,9 @@ clients." />
                                 </div>
                             </div>
 
-                            <div class="container mx-auto mt-20">
+                            <div class="container px-3 mx-auto mt-20">
                                 <h2 class="text-4xl text-gray-700 text-center mb-10 uppercase">Client Testimonials</h2>
-                                <div class="flex justify-center items-center gap-4 lg:px-10 px-4">
+                                <div class="flex flex-col md:flex-row justify-center items-center gap-4 lg:px-10 px-4">
                                     <div
                                         class="w-full md:w-1/2 lg:w-1/3 hover:shadow-indigo-300 hover:shadow-lg rounded-lg border">
                                         <div class="flex justify-center items-start flex-col p-5 ">
@@ -480,20 +494,21 @@ clients." />
             <!-- Onboard form -->
 
             <div id="form">
-                <div class="container mx-auto">
+                <div class="container px-3 mx-auto">
                     <button class="w-full bg-primary p-3 font-semibold rounded rounded-md hover:bg-blue-600"
                         id="show-form">Show Onboard Form</button>
                 </div>
 
-                <div class="gradient hidden mt-5"
+                <div class="gradient mt-5"
                     id="Onboard-form">
 
-                    <div class="container mx-auto pt-24 pb-14 w-full md:w-3/6">
+                    <div class="container px-3 mx-auto pt-24 pb-14 w-full md:w-3/6">
                         <div class="border-2 rounded-lg shadow shadow-lg bg-white">
-                            <div class="mt-3 text-center text-4xl font-bold text-gray-700">On Board Form</div>
-                            <form method="post" id="onboard-data">
+                            <div class="mt-3 text-center text-4xl font-bold primary-color">On Board Form</div>
+                            <form id="onboard-data">
                                 <div class="p-8">
-                                    <div id="Client-data">
+                                    <div id="Client-data"
+                                        class="stage">
                                         <div class="flex md:flex-row flex-col gap-4">
                                             <input type="text"
                                                 name="name"
@@ -544,21 +559,26 @@ clients." />
                                                 id="select"
                                                 class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold
                                         text-gray-700 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1
-                                        focus:ring-sky-500 sm:text-sm" placeholder="State/Province" />
+                                        focus:ring-sky-500 sm:text-sm"
+                                                placeholder="State/Province" />
 
                                         </div>
 
                                         <div class="my-6 flex gap-4">
-                                            <select name="select" id="select"
-                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" required>
-                                                <option class="font-semibold text-slate-300" value="">Select Country</option>
+                                            <select name="select"
+                                                id="select"
+                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                                                required>
+                                                <option class="font-semibold text-slate-300"
+                                                    value="">Select Country</option>
                                                 <option class="font-semibold text-slate-300"
                                                     value="Nigeria">Nigeria</option>
                                             </select>
 
                                             <select name="select"
                                                 id="select"
-                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" required>
+                                                class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+                                                required>
                                                 <option class="font-semibold text-slate-300"
                                                     value=""
                                                     selected>Preferred Contact Method</option>
@@ -572,20 +592,28 @@ clients." />
                                     </div>
 
                                     <div id="service-interest"
-                                        class="hidden">
-                                        <div class="text-3xl text-gray-700 mb-5 font-semibold">Service Interest</div>
+                                        class="stage mb-6">
+                                        <div class="text-3xl text-gray-700 font-semibold">Service Interest</div>
+                                        <p class="text-sm text-red-500 mb-5">Select each service you want to fill by
+                                            checking the checkbox</p>
                                         <div class="border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
-                                            <div class="flex items-center justify-between cursor-pointer"
-                                                id="digital-asset">
-                                                <h2 class="text-gray-700 text-xl font-medium">Digital Asset Portfolio
-                                                    Management
-                                                </h2>
+                                            <div class="flex gap-2">
+                                                <input type="checkbox"
+                                                    name="digital-asset"
+                                                    id="digitalAssetService">
+                                                <div class="flex items-center justify-between w-full cursor-pointer"
+                                                    id="digital-asset">
+                                                    <h2 class="text-gray-700 text-xl font-medium">Digital Asset
+                                                        Portfolio
+                                                        Management
+                                                    </h2>
 
-                                                <div class="dropdown-icon"
-                                                    id="digital-dropdown">
-                                                    <img src="images/icons8-dropdown-24.png"
-                                                        alt="">
+                                                    <div class="dropdown-icon"
+                                                        id="digital-dropdown">
+                                                        <img src="images/icons8-dropdown-24.png"
+                                                            alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="px-4 grid"
@@ -754,15 +782,21 @@ clients." />
 
                                         <div class="mt-4 border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
-                                            <div class="flex items-center justify-between cursor-pointer"
-                                                id="trading-asset">
-                                                <h2 class="text-gray-700 text-xl font-medium">Forex Trading Investment
-                                                </h2>
+                                            <div class="flex gap-2">
+                                                <input type="checkbox"
+                                                    name="forex-trading"
+                                                    id="forestTradingService">
+                                                <div class="flex items-center justify-between w-full cursor-pointer"
+                                                    id="trading-asset">
+                                                    <h2 class="text-gray-700 text-xl font-medium">Forex Trading
+                                                        Investment
+                                                    </h2>
 
-                                                <div class="dropdown-icon"
-                                                    id="trading-dropdown">
-                                                    <img src="images/icons8-dropdown-24.png"
-                                                        alt="">
+                                                    <div class="dropdown-icon"
+                                                        id="trading-dropdown">
+                                                        <img src="images/icons8-dropdown-24.png"
+                                                            alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="px-4 grid"
@@ -904,14 +938,23 @@ clients." />
 
                                         <div class="mt-4 border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
-                                            <div class="flex cursor-pointer items-center justify-between"
-                                                id="estate-asset">
-                                                <h2 class="text-gray-700 text-xl font-medium">Real Estate Advisory</h2>
 
-                                                <div class="dropdown-icon"
-                                                    id="estate-dropdown">
-                                                    <img src="images/icons8-dropdown-24.png"
-                                                        alt="">
+                                            <div class="flex gap-2">
+                                                <input type="checkbox"
+                                                    name="real-estate"
+                                                    id="realEstateService">
+
+                                                <div class="flex cursor-pointer items-center justify-between w-full"
+                                                    id="estate-asset">
+                                                    <h2 class="text-gray-700 text-xl font-medium">
+                                                        Real Estate Advisory
+                                                    </h2>
+
+                                                    <div class="dropdown-icon"
+                                                        id="estate-dropdown">
+                                                        <img src="images/icons8-dropdown-24.png"
+                                                            alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="px-4 grid"
@@ -1077,7 +1120,7 @@ clients." />
 
                                     <div class="flex justify-between">
 
-                                        <button id="previous-btn"
+                                        <button id="prevBtn"
                                             class="invisible text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white flex">
                                             <img src="images/left.png"
                                                 class="w-4 mr-2"
@@ -1085,20 +1128,19 @@ clients." />
                                             Previous
                                         </button>
 
-                                        <button type="submit"
-                                            class="text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3
-                                            text-sm font-semibold text-white flex">
+                                        <button id="nextBtn"
+                                            class="text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white flex">
                                             Next <img src="images/next.png"
                                                 class="w-4 ml-2"
                                                 alt="">
                                         </button>
-
+                                        <!-- 
                                         <button type="submit"
                                             class="hidden text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white flex">
                                             Next <img src="images/next.png"
                                                 class="w-4 ml-2"
                                                 alt="">
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             </form>

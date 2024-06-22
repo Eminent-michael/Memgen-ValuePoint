@@ -100,7 +100,7 @@ clients." />
             </div>
             <div class="block lg:hidden pr-4">
                 <button id="nav-toggle"
-                    class="ham flex items-center hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    class="ham flex items-center primary-color focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                     <svg class="fill-current h-6 w-6"
                         viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +127,7 @@ clients." />
 
                     <li class="mr-3">
                         <a class="nav-item inline-block no-underline font-bold hover:text-gray-800 hover:text-underline py-2 px-4"
-                            href="portfolio.html">Portfolio</a>
+                            href="#">Portfolio</a>
                     </li>
 
                 </ul>
@@ -494,9 +494,9 @@ clients." />
             <!-- Onboard form -->
 
             <div id="form">
-                <div class="container px-3 mx-auto pb-9">
-                    <button class="w-full bg-primary p-3 font-semibold rounded rounded-md hover:bg-blue-600"
-                        id="show-form">Show Onboard Form</button>
+                <div class="container px-3 mx-auto pb-9 flex">
+                    <a href="#onboard-data" class="text-center w-full bg-primary p-3 font-semibold rounded rounded-md hover:bg-blue-600"
+                        id="show-form">Show Onboard Form</a>
                 </div>
 
                 <div class="gradient hidden mt-5"
@@ -605,7 +605,7 @@ clients." />
                                         <!-- Digital Asset Service -->
                                         <div class="border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
-                                            <div class="flex gap-2">
+                                            <label class="flex gap-2">
                                                 <input type="checkbox"
                                                     name="digital-asset"
                                                     id="digitalAssetService" class="service-checkbox">
@@ -622,7 +622,7 @@ clients." />
                                                             alt="">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </label>
                                             <div class="px-4 grid"
                                                 style="grid-template-rows: 0fr; transition: grid-template-rows 500ms;"
                                                 id="digital-asset-body">
@@ -803,7 +803,7 @@ clients." />
 
                                         <div class="mt-4 border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
-                                            <div class="flex gap-2">
+                                            <label class="flex gap-2">
                                                 <input type="checkbox"
                                                     name="forex-trading"
                                                     id="forestTradingService" class="service-checkbox">
@@ -819,7 +819,7 @@ clients." />
                                                             alt="">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </label>
                                             <div class="px-4 grid"
                                                 style="grid-template-rows: 0fr; transition: grid-template-rows 500ms;"
                                                 id="trading-asset-body">
@@ -974,7 +974,7 @@ clients." />
                                         <div class="mt-4 border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
 
-                                            <div class="flex gap-2">
+                                            <label class="flex gap-2">
                                                 <input type="checkbox"
                                                     name="real-estate"
                                                     id="realEstateService" class="service-checkbox">
@@ -991,7 +991,7 @@ clients." />
                                                             alt="">
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </label>
                                             <div class="px-4 grid"
                                                 style="grid-template-rows: 0fr; transition: grid-template-rows 500ms;"
                                                 id="estate-asset-body">

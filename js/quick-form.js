@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
   const message = `Full Name: ${quickFormData.fullName}%0AEmail: ${quickFormData.email}%0APhone No: ${quickFormData.tel}%0AService Interest: ${quickFormData.interest}`;
 
   // WhatsApp number in international format without '+' (e.g., 2348024488521)
-  const whatsappNumber = "2348024488521";
+  const whatsappNumber = "+2349038130876";
 
   // WhatsApp API link
   const whatsappApiLink = `https://wa.me/${whatsappNumber}?text=${message}`;

@@ -92,7 +92,7 @@ clients." />
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                    href="#">
+                    href="index.html">
                     <img src="images/logo.png"
                         class="w-40"
                         alt="">
@@ -494,12 +494,12 @@ clients." />
             <!-- Onboard form -->
 
             <div id="form">
-                <div class="container px-3 mx-auto">
+                <div class="container px-3 mx-auto pb-9">
                     <button class="w-full bg-primary p-3 font-semibold rounded rounded-md hover:bg-blue-600"
                         id="show-form">Show Onboard Form</button>
                 </div>
 
-                <div class="gradient mt-5"
+                <div class="gradient hidden mt-5"
                     id="Onboard-form">
 
                     <div class="container px-3 mx-auto pt-24 pb-14 w-full md:w-3/6">
@@ -512,6 +512,7 @@ clients." />
                                         <div class="flex md:flex-row flex-col gap-4">
                                             <input type="text"
                                                 name="name"
+                                                id="onBoardFullName"
                                                 class="mt-1 block w-full md:w-1/2 text-gray-700 rounded-md font-semibold border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-bold
                                         placeholder:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                         focus:ring-sky-500 sm:text-sm"
@@ -520,6 +521,7 @@ clients." />
 
                                             <input type="email"
                                                 name="email"
+                                                id="onBoardEmail"
                                                 class="mt-1 block md:w-1/2 text-gray-700 rounded-md font-semibold border border-slate-300
                                         bg-white px-3 py-4
                                         placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500
@@ -531,14 +533,17 @@ clients." />
                                         <div class="flex md:flex-row flex-col gap-4 mt-4">
                                             <input type="tel"
                                                 name="phone"
+                                                id="onBoardTel"
                                                 class="mt-1 block w-full md:w-1/2 text-gray-700 font-semibold rounded-md border
                                         border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm
                                         placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none
                                         focus:ring-1 focus:ring-sky-500 sm:text-sm"
                                                 placeholder="Phone number *"
                                                 required />
+
                                             <input type="text"
                                                 name="address"
+                                                id="onBoardAddress"
                                                 class="mt-1 block w-full md:w-1/2 text-gray-700 font-semibold rounded-md border
                                         border-slate-300 bg-white px-3 py-4
                                         placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500
@@ -550,13 +555,13 @@ clients." />
                                         <div class="my-6 flex gap-4">
                                             <input type="text"
                                                 name="select"
-                                                id="select"
+                                                id="onBoardCity"
                                                 class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-700 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
                                                 placeholder="City" />
 
                                             <input type="text"
                                                 name="select"
-                                                id="select"
+                                                id="onBoardState"
                                                 class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold
                                         text-gray-700 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1
                                         focus:ring-sky-500 sm:text-sm"
@@ -566,7 +571,7 @@ clients." />
 
                                         <div class="my-6 flex gap-4">
                                             <select name="select"
-                                                id="select"
+                                                id="onBoardCountry"
                                                 class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
                                                 required>
                                                 <option class="font-semibold text-slate-300"
@@ -576,7 +581,7 @@ clients." />
                                             </select>
 
                                             <select name="select"
-                                                id="select"
+                                                id="onBoardPreCont"
                                                 class="block w-full md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
                                                 required>
                                                 <option class="font-semibold text-slate-300"
@@ -596,12 +601,14 @@ clients." />
                                         <div class="text-3xl text-gray-700 font-semibold">Service Interest</div>
                                         <p class="text-sm text-red-500 mb-5">Select each service you want to fill by
                                             checking the checkbox</p>
+
+                                        <!-- Digital Asset Service -->
                                         <div class="border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
                                             <div class="flex gap-2">
                                                 <input type="checkbox"
                                                     name="digital-asset"
-                                                    id="digitalAssetService">
+                                                    id="digitalAssetService" class="service-checkbox">
                                                 <div class="flex items-center justify-between w-full cursor-pointer"
                                                     id="digital-asset">
                                                     <h2 class="text-gray-700 text-xl font-medium">Digital Asset
@@ -638,7 +645,7 @@ clients." />
                                                         <p class="text-gray-600 text-lg mt-7 font-semibold">
                                                             Types of Digital Assets Currently Owned
                                                         </p>
-                                                        <div class="digital-type-owned"
+                                                        <div class="digital-service-group"
                                                             data-group="digitalTypeOwnGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
@@ -674,8 +681,8 @@ clients." />
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
-                                                                <input type="digitalTypeOwnGroup"
-                                                                    name="NFTs"
+                                                                <input type="checkbox"
+                                                                    name="digitalTypeOwnGroup"
                                                                     value="NFTs">
                                                                 <i class="pl-2">NFTs</i>
                                                             </label>
@@ -697,7 +704,7 @@ clients." />
                                                     <div class="mt-7">
                                                         <p class="text-gray-700 text-lg font-semibold">Investment Goals
                                                         </p>
-                                                        <div class="digital-invest-goal"
+                                                        <div class="digital-service-group"
                                                             data-group="digitalInvestGoalGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
@@ -739,8 +746,8 @@ clients." />
                                                             Investment
                                                             Duration
                                                         </p>
-                                                        <div class="digital-pre-invest"
-                                                            name="digitalPreInvestGroup">
+                                                        <div class="digital-service-group"
+                                                            data-group="digitalPreInvestGroup">
 
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
@@ -792,12 +799,14 @@ clients." />
                                             </div>
                                         </div>
 
+                                        <!-- Forex Trading Service -->
+
                                         <div class="mt-4 border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
                                             <div class="flex gap-2">
                                                 <input type="checkbox"
                                                     name="forex-trading"
-                                                    id="forestTradingService">
+                                                    id="forestTradingService" class="service-checkbox">
                                                 <div class="flex items-center justify-between w-full cursor-pointer"
                                                     id="trading-asset">
                                                     <h2 class="text-gray-700 text-xl font-medium">Forex Trading
@@ -818,7 +827,7 @@ clients." />
                                                     <label class="text-gray-600 font-medium">Current Trading
                                                         Experience</label>
                                                     <select name="forex-exp"
-                                                        id="forex-exp"
+                                                        id="forexExp"
                                                         class="mt-2 block md:w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 font-semibold text-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm">
                                                         <option class="font-semibold text-slate-300"
                                                             value="Beginner"
@@ -833,7 +842,7 @@ clients." />
                                                         <p class="text-gray-600 text-lg mt-7 font-semibold">Trading
                                                             Style
                                                         </p>
-                                                        <div class="forex-trading-style"
+                                                        <div class="forex-trading-group"
                                                             data-group="forexTradingStyleGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
@@ -873,7 +882,7 @@ clients." />
                                                     <div class="mt-7">
                                                         <p class="text-gray-700 text-lg font-semibold">Investment Goals
                                                         </p>
-                                                        <div class="forex-invest-goal"
+                                                        <div class="forex-trading-group"
                                                             data-group="forexInvestGoalGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
@@ -916,7 +925,8 @@ clients." />
                                                             Currency
                                                             Pairs
                                                         </p>
-                                                        <div class="forex-pre-currency" data-group="forexPreCurrencyGroup">
+                                                        <div class="forex-trading-group"
+                                                            data-group="forexPreCurrencyGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
@@ -959,13 +969,15 @@ clients." />
                                             </div>
                                         </div>
 
+                                        <!-- Real Estage Service -->
+
                                         <div class="mt-4 border px-2 border-gray-500 pb-2"
                                             style="border-right: 0; border-left: 0; border-top: 0;">
 
                                             <div class="flex gap-2">
                                                 <input type="checkbox"
                                                     name="real-estate"
-                                                    id="realEstateService">
+                                                    id="realEstateService" class="service-checkbox">
 
                                                 <div class="flex cursor-pointer items-center justify-between w-full"
                                                     id="estate-asset">
@@ -1004,7 +1016,7 @@ clients." />
                                                             Real Estate
                                                             Interests:
                                                         </p>
-                                                        <div class="estate-type" data-group="estateTypeGroup">
+                                                        <div class="real-estate-group" data-group="estateTypeGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer">
                                                                 <input type="checkbox"
@@ -1012,7 +1024,7 @@ clients." />
                                                                     value="Residential Properties">
                                                                 <i class="pl-2">Residential Properties</i>
                                                             </label>
-
+                                                            
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
@@ -1066,7 +1078,8 @@ clients." />
                                                     <div class="mt-7">
                                                         <p class="text-gray-700 text-lg font-semibold">Investment Goals
                                                         </p>
-                                                        <div class="estate-invest-goal" data-group="estateInvestGoalGroup">
+                                                        <div class="real-estate-group"
+                                                            data-group="estateInvestGoalGroup">
                                                             <label
                                                                 class="flex bg-gray-100 text-gray-700 rounded-md px-3 py-2 my-3  hover:bg-indigo-300 cursor-pointer ">
                                                                 <input type="checkbox"
@@ -1106,7 +1119,8 @@ clients." />
                                                         <p class="text-gray-600 text-lg mt-7 font-semibold">Preferred
                                                             Locations
                                                         </p>
-                                                        <div class="estate-pre-location" data-group="estatePreLocationGroup">
+                                                        <div class="real-estate-group"
+                                                            data-group="estatePreLocationGroup">
                                                             <label class="my-3 text-gray-600 ">
                                                                 <i>Domestic (please specify region)</i>
                                                             </label>
@@ -1162,8 +1176,11 @@ clients." />
 
                                         <button id="nextBtn"
                                             class="text-center cursor-pointer rounded-lg bg-blue-700 px-8 py-3 text-sm font-semibold text-white flex">
-                                            Next <img src="images/next.png"
-                                                class="w-4 ml-2"
+                                            <span class="nextBtnText">
+                                                Next
+                                            </span>
+                                            <img src="images/next.png"
+                                                class="next-icon w-4 ml-2"
                                                 alt="">
                                         </button>
                                         <!-- 

@@ -262,8 +262,10 @@ clients." />
     <div class="container mx-auto px-8">
       <div class="w-full flex flex-col md:flex-row py-6">
         <div class="flex-1 mb-6">
-          <a href="index.html">
-            <img src="images/logo.png" class="w-48" alt="">
+          <a href="#">
+            <img src="images/logo.png"
+              class="w-48"
+              alt="">
           </a>
         </div>
         <div class="flex-1">
@@ -309,27 +311,27 @@ clients." />
               </h2>
             </div>
             <div class="mt-2 sm:w-full">
-              <div id="mc_embed_signup">
-                <form>
+              <div id="">
+                <form id="quickForm">
 
-                  <input class="required rounded-md w-full px-4 py-2 text-gray-900"
-                    id="mce-EMAIL"
+                  <input class="rounded-md w-full px-4 py-2 text-gray-900"
+                    id="quickFullName"
                     placeholder="Full name"
                     required=""
                     type="text"
                     value=""
                     aria-required="true">
 
-                  <input class="required mt-3 rounded-md w-full px-4 py-2 email text-gray-900"
-                    id="mce-EMAIL"
+                  <input class="mt-3 rounded-md w-full px-4 py-2 email text-gray-900"
+                    id="quickEmail"
                     placeholder="Enter your email"
                     required=""
                     type="email"
                     value=""
                     aria-required="true">
 
-                  <input class="required mt-3 rounded-md w-full px-4 py-2 email text-gray-900"
-                    id="mce-EMAIL"
+                  <input class="mt-3 rounded-md w-full px-4 py-2 email text-gray-900"
+                    id="quickTel"
                     placeholder="Phone no"
                     required=""
                     type="tel"
@@ -337,30 +339,32 @@ clients." />
                     aria-required="true">
 
                   <textarea name="textarea"
-                    id="text"
+                    id="quickInterest"
                     cols="30"
                     rows="10"
                     class="mt-3 mb-3 h-40 w-full resize-none rounded-md border border-slate-300 p-5 font-normal text-gray-900"
-                    placeholder="Input your service interest"></textarea>
+                    placeholder="Input your service interest"
+                    required></textarea>
+                  <div class="mt-2 rounded-md shadow sm:mt-0 sm:flex-shrink-0">
+                    <button id="quickBtn"
+                      class="bg-white w-full flex items-center justify-center px-5 py-3 text-base leading-6
+                      font-medium rounded-md text-black g focus:ring
+                      hover:bg-gray-200 focus:outline-none focus:bg-indigo-400
+                      transition duration-150 ease-in-out"
+                      type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
-              <div class="mt-2 rounded-md shadow sm:mt-0 sm:flex-shrink-0">
-                <button class="bg-white w-full flex items-center justify-center px-5 py-3 text-base leading-6
-                            font-medium rounded-md text-black g focus:ring
-                            hover:bg-gray-200 focus:outline-none focus:bg-indigo-400
-                            transition duration-150 ease-in-out"
-                  type="submit">
-                  Submit
-                </button>
-              </div>
-              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+
   </footer>
-  <a href=""
+  <a href="https://wa.me/2348024488521"
     class="fixed bottom-16 right-7">
     <img src="images/whatsapp.png"
       class="w-11"
@@ -373,6 +377,7 @@ clients." />
 
   <script src="js/nav-responsive.js">
   </script>
+  <script src="js/quick-form.js"></script>
 </body>
 
 </html>

@@ -200,6 +200,6 @@ function collectFormData() {
     ".real-estate-group"
   );
 
-  console.log("Form Data:", formData);
+  console.log("Form Data:", JSON.stringify(formData));
 }
 

@@ -1,3 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.footer-hover:hover {
+    color: #f68948;
+}

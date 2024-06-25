@@ -201,5 +201,29 @@ function collectFormData() {
   );
 
   console.log("Form Data:", JSON.stringify(formData));
+
+
+  // Send data using Fetch API
+  fetch(
+    "https://87b806d3-e44f-4748-b9a5-298d7b8e1eeb-00-pooohl4a2fst.kirk.replit.dev/send-email",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    }
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+      alert("Form submitted successfully!");
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("An error occurred while submitting the form.");
+    });
+
+
 }
 

@@ -111,27 +111,27 @@ clients." />
             </div>
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 sm:bg-primary md:bg-transparent text-black p-4 lg:p-0 z-20"
                 id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center md:w-full text-black mb-7">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center md:w-full text-black md:mb-0 mb-7">
                     <li class="mr-3">
-                        <a class="nav-item inline-block py-2 px-4 no-underline hover:text-gray-800 hover:text-underline"
+                        <a class="nav-item inline-block py-2 px-4 no-underline hover:primary-color hover:text-underline"
                             href="index.html">Home</a>
                     </li>
                     <li class="mr-3">
-                        <a class="nav-item inline-bloc hover:text-underline py-2 px-4 hover:text-gray-800"
+                        <a class="nav-item inline-bloc hover:text-underline py-2 px-4 hover:primary-color"
                             href="about-us.html">About Us</a>
                     </li>
                     <li class="mr-3">
-                        <a class="nav-item inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                        <a class="nav-item inline-bloc hover:text-underline py-2 px-4 hover:primary-color"
                             href="our-service.html">Our Service</a>
                     </li>
 
                     <li class="mr-3">
-                        <a class="nav-item inline-block no-underline font-bold hover:text-gray-800 hover:text-underline py-2 px-4"
+                        <a class="nav-item inline-block no-underline font-bold hover:primary-color hover:text-underline py-2 px-4"
                             href="#">Portfolio</a>
                     </li>
 
                 </ul>
-                <a href="index.html#contact-us"
+                <a href="#contact-us"
                     id="navAction"
                     class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full mt-2 lg:mt-0 py-4 px-8
           shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300
@@ -145,7 +145,7 @@ clients." />
 
     <div class="pt-16 bg-white">
         <div>
-            <div class="top-14 md:top-24 right-7 fixed px-3 mx-auto flex gap-2 justify-end"
+            <div class="top-14 md:top-20 right-7 fixed px-3 mx-auto flex gap-2 justify-end"
                 style="z-index: 1000;">
                 <a href="#Explore"
                     class="px-2 py-1 text-sm bg-primary">Explore</a>
@@ -1333,7 +1333,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name="estatePreLocationGroup"
+                                                                name="estatePreLocationGroupText"
                                                                 placeholder="Domestic" />
 
                                                             <label class="my-3 text-gray-600 ">
@@ -1344,7 +1344,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name="estatePreLocationGroup"
+                                                                name="estatePreLocationGroupText"
                                                                 placeholder="Inernational" />
 
                                                             <label class="my-3 text-gray-600 ">
@@ -1355,7 +1355,7 @@ clients." />
                                             der:text-gray-300 focus:border-sky-500 focus:outline-none focus:ring-1
                                             ng-sky-500 sm:text-sm"
                                                                 type="text"
-                                                                name="estatePreLocationGroup"
+                                                                name="estatePreLocationGroupText"
                                                                 placeholder="Question" />
 
                                                         </div>
@@ -1363,6 +1363,20 @@ clients." />
                                                 </div>
 
                                             </div>
+                                        </div>
+
+                                        <div class="mt-8 text-sm inline-flex flex-col">
+                                            <label class="text-black">
+                                                <input type="checkbox" name="" class="consent">
+                                                I confirm that the information provided is accurate and complete to the
+                                                best of my knowledge.
+                                            </label>
+
+                                            <label class="text-black mt-4">
+                                                <input type="checkbox" class="consent">
+                                                I agree to be contacted by Memgen ValuePoint International regarding my
+                                                service interests.
+                                            </label>
                                         </div>
                                     </div>
 

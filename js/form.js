@@ -5,9 +5,8 @@
 const showBtn = document.getElementById("show-form");
 
 showBtn.addEventListener("click", () => {
-  document.getElementById("Onboard-form").classList.remove("hidden")
-})
-
+  document.getElementById("Onboard-form").classList.remove("hidden");
+});
 
 // Drop Down Effect on form page
 
@@ -40,7 +39,6 @@ tradingAsset.addEventListener("click", () => {
   tradingAssetBody.classList.toggle("py-8");
   tradingDropdownIcon.classList.toggle("open");
 });
-
 
 let currentStage = 0;
 const stages = document.querySelectorAll(".stage");
@@ -105,14 +103,25 @@ showStage(currentStage); // Show the first stage
 
 function checkServiceCheckbox() {
   const checkboxes = document.querySelectorAll(".service-checkbox");
+  const consentCheckboxes = document.querySelectorAll(".consent");
   const anyChecked = Array.from(checkboxes).some(
     (checkbox) => checkbox.checked
   );
 
+  const consentChecked = Array.from(consentCheckboxes).every(
+    (consent) => consent.checked
+  );
+
   if (anyChecked) {
-    collectFormData();
+    if (consentChecked) {
+      collectFormData();
+    } else {
+      alert("Checked the consent checkboxes");
+      currentStage--;
+    }
   } else {
     alert("No checkboxes are checked.");
+    currentStage--;
   }
 }
 
@@ -202,10 +211,9 @@ function collectFormData() {
 
   console.log("Form Data:", JSON.stringify(formData));
 
-
   // Send data using Fetch API
   fetch(
-    "https://87b806d3-e44f-4748-b9a5-298d7b8e1eeb-00-pooohl4a2fst.kirk.replit.dev/send-email",
+    "https://7b15ff2b-7670-4d1f-a482-628ab1984612-00-3sbjdy4yf0j2k.picard.replit.dev/send_email",
     {
       method: "POST",
       headers: {
@@ -223,7 +231,4 @@ function collectFormData() {
       console.error("Error:", error);
       alert("An error occurred while submitting the form.");
     });
-
-
 }
-

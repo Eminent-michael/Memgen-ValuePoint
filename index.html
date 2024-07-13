@@ -72,7 +72,7 @@ clients." />
   style="font-family: 'Source Sans Pro', sans-serif;">
   <!--Nav-->
   <nav id="header"
-    class="fixed w-full z-30 top-0 text-white header-bg">
+    class="fixed w-full top-0 text-white header-bg" style="z-index:1000;">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
@@ -110,15 +110,15 @@ clients." />
               href="our-service.html">Our Service</a>
           </li>
 
-          <li class="mr-3">
+          <li class="mr-3"
+            id="navContact">
             <a class="nav-item inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
               href="portfolio.html">Portfolio</a>
           </li>
 
         </ul>
         <a href="#contact-us"
-          id="navAction"
-          class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full mt-2 lg:mt-0 py-4 px-8
+          class="mx-auto lg:mx-0 gradient text-white font-bold rounded-full sm:bg-transparent lg:mt-0 py-4 px-8
           shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300
           ease-in-out">
           Contact Us
@@ -128,7 +128,7 @@ clients." />
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
   <!--Hero-->
-  <div class="pt-24 hero">
+  <div class="hero flex items-center">
     <div class="container px-3 mx-auto flex flex-wrap items-center">
       <!--Left Col-->
       <div class="text-center md:text-left">
@@ -139,15 +139,21 @@ clients." />
           Empowering Your Financial Future Through Digital Assets, Forex, and Real Estate
           Investments
         </p>
-        <a href="#quickForm"
-          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Get Started Today
-        </a>
+        <div class="flex gap-3 justify-center  md:absolute z-50">
+          <a href="#quickForm"
+            class="lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out cursor-pointer">
+            Get Started Today
+          </a>
+          <a href="https://wa.me/+2349038130876?text=15% @3-Months"
+            class="lg:mx-0 hover:underline bg-secondary text-white font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out cursor-pointer">
+            15% @3-Months
+          </a>
+        </div>
       </div>
       <!--Right Col-->
     </div>
   </div>
-  <div class="relative -mt-12 lg:-mt-44">
+  <div class="relative -mt-24 lg:-mt-44">
     <svg viewBox="0 0 1428 174"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -307,7 +313,7 @@ clients." />
             <div class="flex-1">
               <h2
                 class="text-2xl leading-8 font-extrabold tracking-tight text-center mb-2 text-white sm:text-3xl sm:leading-9">
-                Mention your interest <br> and we will get right back
+                Mention your service interest <br> and we will get right back
               </h2>
             </div>
             <div class="mt-2 sm:w-full">

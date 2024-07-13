@@ -2,43 +2,93 @@
 
 // Show form
 
-const showBtn = document.getElementById("show-form");
+const showBtn = document.querySelectorAll(".show-form");
 
-showBtn.addEventListener("click", () => {
-  document.getElementById("Onboard-form").classList.remove("hidden");
-});
+
+function showOnBoardSec() {
+   document.getElementById("Onboard-form").classList.remove("hidden");
+}
+
+showBtn.forEach(btn => {
+  btn.addEventListener('click', showOnBoardSec)
+})
 
 // Drop Down Effect on form page
 
 const digitalAsset = document.querySelector("#digital-asset");
 const digitalAssetBody = document.querySelector("#digital-asset-body");
 const dropdownIcon = document.querySelector("#digital-dropdown");
+var digitalCheckbox = document.querySelector("#digitalAssetService");
+var digitalChecked = false
+var digitalDrop = false;
 
 const estateAsset = document.querySelector("#estate-asset");
 const estateAssetBody = document.querySelector("#estate-asset-body");
 const estateDropdownIcon = document.querySelector("#estate-dropdown");
+var estateCheckbox = document.querySelector("#realEstateService");
+
 
 const tradingAsset = document.querySelector("#trading-asset");
 const tradingAssetBody = document.querySelector("#trading-asset-body");
 const tradingDropdownIcon = document.querySelector("#trading-dropdown");
+var tradingCheckbox = document.querySelector("#forestTradingService");
 
-digitalAsset.addEventListener("click", () => {
+
+
+// Toggle Function
+
+function digitalToggle() {
   digitalAssetBody.classList.toggle("addheight");
   digitalAssetBody.classList.toggle("py-8");
   dropdownIcon.classList.toggle("open");
-});
+}
 
-estateAsset.addEventListener("click", () => {
+function estateToggle() {
   estateAssetBody.classList.toggle("addheight");
   estateAssetBody.classList.toggle("py-8");
   estateDropdownIcon.classList.toggle("open");
+}
+
+function tradingToggle() {
+   tradingAssetBody.classList.toggle("addheight");
+   tradingAssetBody.classList.toggle("py-8");
+   tradingDropdownIcon.classList.toggle("open");
+}
+
+
+digitalAsset.addEventListener("click", digitalToggle);
+digitalCheckbox.addEventListener("change", () => {
+  if (!digitalCheckbox.checked) {
+    console.log("checked")
+    if (!digitalAssetBody.classList.contains("addheight")) {
+      digitalToggle();
+    }
+  };
+  digitalToggle();
 });
 
-tradingAsset.addEventListener("click", () => {
-  tradingAssetBody.classList.toggle("addheight");
-  tradingAssetBody.classList.toggle("py-8");
-  tradingDropdownIcon.classList.toggle("open");
+estateAsset.addEventListener("click", estateToggle);
+estateCheckbox.addEventListener("change", () => {
+  if (!estateCheckbox.checked) {
+    console.log("checked");
+    if (!estateAssetBody.classList.contains("addheight")) {
+      estateToggle();
+    }
+  }
+  estateToggle();
 });
+
+tradingAsset.addEventListener("click", tradingToggle);
+tradingCheckbox.addEventListener("change", () => {
+  if (!tradingCheckbox.checked) {
+    console.log("checked");
+    if (!tradingAssetBody.classList.contains("addheight")) {
+      tradingToggle();
+    }
+  }
+  tradingToggle();
+});
+
 
 let currentStage = 0;
 const stages = document.querySelectorAll(".stage");
@@ -120,7 +170,7 @@ function checkServiceCheckbox() {
       currentStage--;
     }
   } else {
-    alert("No checkboxes are checked.");
+    alert("No Servicebox is checked yet.");
     currentStage--;
   }
 }

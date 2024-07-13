@@ -3,5 +3,12 @@ html {
 }
 
 .footer-hover:hover {
-    color: #f68948;
+    color: hsl(22, 91%, 62%);
+}
+
+@media (max-width: 1022px) {
+    #navContact {
+        margin-bottom: 1rem !important;
+        margin-top: -4px;   
+    }
 }
